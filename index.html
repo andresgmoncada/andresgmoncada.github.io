@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="main-header">
+
+        <input type="checkbox" id="menu">
+
+        <nav class="nav-bar">
+            <ul class="nav-bar__nav-list">
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="alta.html">Alta</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <div class="search-bar__logo-container">
+                <img src="img/logo/logo-connecticus.png" alt="logo-connecticus">
+            </div>
+            <form class="search-bar__form-container">
+                <div class="search-bar__form-label-container">
+                    <img src="img/search/lens-icon.png" alt="lupa">
+                    <label class="search-bar__form-label" for="busqueda"></label>
+                </div>
+                <input 
+                    class="search-bar__form-search" 
+                    id="busqueda" 
+                    type="search" 
+                    placeholder="Televisores, celulares, Pc's y más... "
+                >
+                <div class="search-bar__search-button">
+                    <input class="search-bar__form-submit" type="submit" value="Buscar">
+                </div>
+                
+            </form>
+
+            <a class="search-bar__registrarme-container" href="alta.html">Registrarme</a>
+
+            <a class="search-bar__cuenta-container" href="cuenta.html">Ingresar a mi cuenta</a>
+
+            <a class="search-bar__carrito-container" href="carrito.html" target="_blank"></a>
+
+    
+            <div class="menu-toggle">
+                <label class="menu-toggle__label" for="menu">
+                    <span class="menu-toggle__pan-arriba"></span>
+                    <span class="menu-toggle__medallon"></span>
+                    <span class="menu-toggle__pan-abajo"></span>
+                </label>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+
+        <div class="wrapper">
+            
+            <div class="slider" id="slider">
+              <ul class="slides">
+                    <li class="slide" id="slide1">
+                        <a href="#">
+                            <p class="caption">20% descuento en Celulares !!!</p>
+                            <img src="img/ofertas/celulares.png" alt="oferta-celulares">
+                        </a>
+                    </li>
+                    <li class="slide" id="slide2">
+                        <a href="#">
+                            <p class="caption">10% descuento en Laptops !!!</p>
+                            <img src="img/ofertas/laptops.png" alt="oferta-laptops">
+                        </a>
+                    </li>
+                    <li class="slide" id="slide3">
+                        <a href="#">
+                            <p class="caption">10% descuento en Headphones !!!</p>
+                            <img src="img/ofertas/headphones.jpg" alt="oferta-headphones">
+                        </a>
+                    </li>
+                    <li class="slide" id="slide4">
+                        <a href="#">
+                            <p class="caption">10% descuento en Laptops !!!</p>
+                            <img src="img/ofertas/laptops.png" alt="oferta-laptops">
+                        </a>
+                    </li>
+                    <li class="slide" id="slide5">
+                        <a href="#">
+                            <p class="caption">10% descuento en Headphones !!!</p>
+                            <img src="img/ofertas/headphones.jpg" alt="oferta-headphones">
+                        </a>
+                    </li>
+                    <li class="slide">
+                        <a href="#">
+                            <p class="caption">20% descuento en Celulares !!!</p>
+                            <img src="img/ofertas/celulares.png" alt="oferta-celulares">
+                        </a>
+                    </li>
+              </ul>
+              <ul class="slider-controler">
+                    <li><a href="#slide1">&bullet;</a></li>
+                    <li><a href="#slide2">&bullet;</a></li>
+                    <li><a href="#slide3">&bullet;</a></li>
+                    <li><a href="#slide4">&bullet;</a></li>
+                    <li><a href="#slide5">&bullet;</a></li>
+              </ul>
+            </div>
+          </div>
+
+
+        
+        <section class="section-cards">
+
+            <header class="section-cards__header">
+                <h1>Estos son los resultados de su búsqueda</h1>
+                <p>Se encontraron X productos</p>
+            </header>
+
+            <div class="cards-container">
+                
+                <a class="card" href="#">
+                    <article class="card__article">
+                        <div
+                            class="card__image"
+                            style="background-image: url('img/productos/notebook-lenovo.jpg')"
+                        >
+                        </div>
+                        
+                        <div class="card__content">
+                            <h3 class="card__heading">Notebook HP AMD Ryzen</h3>
+                            <div class="card__description">
+                                <p>8GB RAM 1TB Sólido 15-CW1500LA</p>
+                                <p class="card__p-stock">Stock disponible: 38 unidades</p>
+                                <p class="card__p-price">Precio: $285.000.- </p>
+                                <p class="card__p-add-kart">+ Agregar a carrito</p>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="card" href="#">
+                    <article class="card__article">
+                        <div
+                            class="card__image"
+                            style="background-image: url('img/productos/apple-iphone-11-pro-max.jpg')"
+                        >
+                        </div>
+                        
+                        <div class="card__content">
+                            <h3 class="card__heading">Celular Apple Iphone 12 Negro</h3>
+                            <div class="card__description">
+                                <p>5G iOS 1TB última gen Incluye acces</p>
+                                <p class="card__p-stock">Stock disponible: 27 unidades</p>
+                                <p class="card__p-price">Precio: $256.000.- </p>
+                                <p class="card__p-add-kart">+ Agregar a carrito</p>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="card" href="#">
+                    <article class="card__article">
+                        <div
+                            class="card__image"
+                            style="background-image: url('img/productos/camara-canon.jpg')"
+                        >
+                        </div>
+                        
+                        <div class="card__content">
+                            <h3 class="card__heading">Cámara Canon retro</h3>
+                            <div class="card__description">
+                                <p>52mp Zoom 30x Color plata o negra</p>
+                                <p class="card__p-stock">Stock disponible: 31 unidades</p>
+                                <p class="card__p-price">Precio: $110.000.- </p>
+                                <p class="card__p-add-kart">+ Agregar a carrito</p>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="card" href="#">
+                    <article class="card__article">
+                        <div
+                            class="card__image"
+                            style="background-image: url('img/productos/auriculares-sony.jpg')"
+                        >
+                        </div>
+                        
+                        <div class="card__content">
+                            <h3 class="card__heading">Auriculares Sony</h3>
+                            <div class="card__description">
+                                <p>Bluetooth larga autonom color negro</p>
+                                <p class="card__p-stock">Stock disponible: 53 unidades</p>
+                                <p class="card__p-price">Precio: $64.000.- </p>
+                                <p class="card__p-add-kart">+ Agregar a carrito</p>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="card" href="#">
+                    <article class="card__article">
+                        <div
+                            class="card__image"
+                            style="background-image: url('img/productos/parlante-jbl.jpg')"
+                        >
+                        </div>
+                        
+                        <div class="card__content">
+                            <h3 class="card__heading">Parlante JBL</h3>
+                            <div class="card__description">
+                                <p>Bluetooth USB 20cm Vs colores</p>
+                                <p class="card__p-stock">Stock disponible: 14 unidades</p>
+                                <p class="card__p-price">Precio: $46.500.- </p>
+                                <p class="card__p-add-kart">+ Agregar a carrito</p>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="card" href="#">
+                    <article class="card__article">
+                        <div
+                            class="card__image"
+                            style="background-image: url('img/productos/google-nest-mini.jpg')"
+                        >
+                        </div>
+                        
+                        <div class="card__content">
+                            <h3 class="card__heading">Google Nest mini</h3>
+                            <div class="card__description">
+                                <p>Stereo 5cm Hasta 600db</p>
+                                <p class="card__p-stock">Stock disponible: 19 unidades</p>
+                                <p class="card__p-price">Precio: $5.000.- </p>
+                                <p class="card__p-add-kart">+ Agregar a carrito</p>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="card" href="#">
+                    <article class="card__article">
+                        <div
+                            class="card__image"
+                            style="background-image: url('img/productos/samsung-galaxy-s21-plus-5g.jpg')"
+                        >
+                        </div>
+                        
+                        <div class="card__content">
+                            <h3 class="card__heading">Celular Samsung Galaxy S21 </h3>
+                            <div class="card__description">
+                                <p>Plus 5G 4proc 500gb Liberado</p>
+                                <p class="card__p-stock">Stock disponible: 44 unidades</p>
+                                <p class="card__p-price">Precio: $196.000.- </p>
+                                <p class="card__p-add-kart">+ Agregar a carrito</p>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="card" href="#">
+                    <article class="card__article">
+                        <div
+                            class="card__image"
+                            style="background-image: url('img/productos/drone-dji.jpg')"
+                        >
+                        </div>
+                        
+                        <div class="card__content">
+                            <h3 class="card__heading">Dron DJI</h3>
+                            <div class="card__description">
+                                <p>Alt max 300ft Alcance 400mts</p>
+                                <p class="card__p-stock">Stock disponible: Sin stock</p>
+                                <p class="card__p-price">Precio: $174.000.- </p>
+                                <p class="card__p-add-kart">+ Agregar a carrito</p>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="card" href="#">
+                    <article class="card__article">
+                        <div
+                            class="card__image"
+                            style="background-image: url('img/productos/notebook-lenovo.jpg')"
+                        >
+                        </div>
+                        
+                        <div class="card__content">
+                            <h3 class="card__heading">Notebook Lenovo </h3>
+                            <div class="card__description">
+                                <p>IntelCore i5 4GB 1TB 15-CW1500LA</p>
+                                <p class="card__p-stock">Stock disponible: 39 unidades</p>
+                                <p class="card__p-price">Precio: $192.000.- </p>
+                                <p class="card__p-add-kart">+ Agregar a carrito</p>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="card" href="#">
+                    <article class="card__article">
+                        <div
+                            class="card__image"
+                            style="background-image: url('img/productos/dji-mavic-2-pro.jpg')"
+                        >
+                        </div>
+                        
+                        <div class="card__content">
+                            <h3 class="card__heading">Mavic 2 Pro DJI</h3>
+                            <div class="card__description">
+                                <p>Altura máx 200ft Alcance 300 mts</p>
+                                <p class="card__p-stock">Stock disponible: 8 unidades</p>
+                                <p class="card__p-price">Precio: $45.000.- </p>
+                                <p class="card__p-add-kart">+ Agregar a carrito</p>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="card" href="#">
+                    <article class="card__article">
+                        <div
+                            class="card__image"
+                            style="background-image: url('img/productos/camara-canon.jpg')"
+                        >
+                        </div>
+                        
+                        <div class="card__content">
+                            <h3 class="card__heading">Cámara Canon retro MOD.2</h3>
+                            <div class="card__description">
+                                <p>64mp Gran angular Capt luz óptima</p>
+                                <p class="card__p-stock">Stock disponible: 16 unidades</p>
+                                <p class="card__p-price">Precio: $62.000.- </p>
+                                <p class="card__p-add-kart">+ Agregar a carrito</p>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="card" href="#">
+                    <article class="card__article">
+                        <div
+                            class="card__image"
+                            style="background-image: url('img/productos/chromecast-google.jpg')"
+                        >
+                        </div>
+                        
+                        <div class="card__content">
+                            <h3 class="card__heading">Chromecast Google</h3>
+                            <div class="card__description">
+                                <p>Apto para LCD, LED, OLED</p>
+                                <p class="card__p-stock">Stock disponible: 118 unidades</p>
+                                <p class="card__p-price">Precio: $31.500.- </p>
+                                <p class="card__p-add-kart">+ Agregar a carrito</p>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="card" href="#">
+                    <article class="card__article">
+                        <div
+                            class="card__image"
+                            style="background-image: url('img/productos/parlante-jbl.jpg')"
+                        >
+                        </div>
+                        
+                        <div class="card__content">
+                            <h3 class="card__heading">Parlante JBL</h3>
+                            <div class="card__description">
+                                <p>Stereo Wireless 20cm Bluetooth</p>
+                                <p class="card__p-stock">Stock disponible: 62 unidades</p>
+                                <p class="card__p-price">Precio: $34.000.- </p>
+                                <p class="card__p-add-kart">+ Agregar a carrito</p>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="card" href="#">
+                    <article class="card__article">
+                        <div
+                            class="card__image"
+                            style="background-image: url('img/productos/google-nest-mini.jpg')"
+                        >
+                        </div>
+                        
+                        <div class="card__content">
+                            <h3 class="card__heading">Google Nest mini PRO</h3>
+                            <div class="card__description">
+                                <p>Parlante stereo Wireless portátil</p>
+                                <p class="card__p-stock">Stock disponible: Sin stock</p>
+                                <p class="card__p-price">Precio: $9.000.- </p>    
+                                <p class="card__p-add-kart">+ Agregar a carrito</p> 
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="card" href="#">
+                    <article class="card__article">
+                        <div
+                            class="card__image"
+                            style="background-image: url('img/productos/televisor-lg.jpg')"
+                        >
+                        </div>
+                        
+                        <div class="card__content">
+                            <h3 class="card__heading">Televisor LG 55" 4K</h3>
+                            <div class="card__description">
+                                <p>Curvo tecnología Oled última gen</p>
+                                <p class="card__p-stock">Stock disponible: 16 unidades</p>
+                                <p class="card__p-price">Precio: $268.000.- </p>
+                                <p class="card__p-add-kart">+ Agregar a carrito</p>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="card" href="#">
+                    <article class="card__article">
+                        <div
+                            class="card__image"
+                            style="background-image: url('img/productos/drone-dji.jpg')"
+                        >
+                        </div>
+                        
+                        <div class="card__content">
+                            <h3 class="card__heading">Drone DJI</h3>
+                            <div class="card__description">
+                                <p>Alt máx 250ft alcance 200mts</p>
+                                <p class="card__p-stock">Stock disponible: 14 unidades</p>
+                                <p class="card__p-price">Precio: $58.600.- </p>
+                                <p class="card__p-add-kart">+ Agregar a carrito</p>                    
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+            </div>
+        </section>
+
+        <section class="cards__pay-method-container">
+            <h3 class="cards__pay-method-header">Conocé más sobre los medios de pago</h3>
+            <div class="cards__pay-method-div">
+                <a class="cards__pay-method" href="#">Tarjetas
+                    <div class="pay-method__tarjeta">
+                        <img src="img/iconos-pago/credit-card.png" alt="tarjeta-de-credito">
+                    </div>                                          
+                </a>
+                <a class="cards__pay-method" href="#">Transferencia
+                    <div class="pay-method__transferencia">
+                        <img src="img/iconos-pago/transfer.png" alt="transferencia">
+                    </div>
+                </a>
+                <a class="cards__pay-method" href="#">Efectivo
+                    <div class="pay-method__efectivo">
+                        <img src="img/iconos-pago/cash.png" alt="efectivo">
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <div class="contacto__whatsapp-container">
+        <a class="contacto__whatsapp-link" href="https://wa.me/+5493413040555">
+            <img src="img/iconos-redes/whatsapp.png" alt="whatsapp">
+        </a>
+    </div>
+
+    <footer>
+       
+        <div class="footer__back-to-main">
+            <a class="footer__back-to-main-link"  href="#">
+                Volver al inicio
+            </a>
+        </div>
+         
+        <div class="footer__foot-menu">
+
+            <div class="footer__foot-list-container">
+                <h3>Lo más buscado !</h3>
+                <ul class="footer__foot-list">
+                    <li class="footer__foot-item">
+                        <a class="footer__foot-link" href="#">Informática</a>
+                    </li>
+                    <li class="footer__foot-item">
+                        <a class="footer__foot-link" href="#">Celulares</a>
+                    </li>
+                    <li class="footer__foot-item">
+                        <a class="footer__foot-link" href="#">Fotografía</a>
+                    </li>
+                    <li class="footer__foot-item">
+                        <a class="footer__foot-link" href="#">Audio</a>
+                    </li>
+                    <li class="footer__foot-item">
+                        <a class="footer__foot-link" href="#">Drones</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__foot-list-container">
+                <h3>Trabajá con nosotros</h3>
+                <ul class="footer__foot-list">
+                    <li class="footer__foot-item">
+                        <a class="footer__foot-link" href="#">Cargar mi CV</a>
+                    </li>
+                    <li class="footer__foot-item">
+                        <a class="footer__foot-link" href="#">Puestos vacantes</a>
+                    </li>
+                    <li class="footer__foot-item">
+                        <a class="footer__foot-link" href="#">Pasantías</a>
+                    </li>
+                    <li class="footer__foot-item">
+                        <a class="footer__foot-link" href="#">Contacto RRHH</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__foot-list-container">
+                <h3>Otros servicios Connecticus</h3>
+                <ul class="footer__foot-list">
+                    <li class="footer__foot-item">
+                        <a class="footer__foot-link" href="#">Financieros</a>
+                    </li>
+                    <li class="footer__foot-item">
+                        <a class="footer__foot-link" href="#">Importaciones</a>
+                    </li>
+                    <li class="footer__foot-item">
+                        <a class="footer__foot-link" href="#">Servicio Técnico</a>
+                    </li>
+                    <li class="footer__foot-item">
+                        <a class="footer__foot-link" href="#">Envíos</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__foot-list-container">
+                <h3>Seguinos en las redes</h3>
+                <ul class="footer__foot-list">
+                    <li class="footer__foot-item">
+                        <a class="footer__foot-link" href="https://www.instagram.com/?hl=es" target="_blank">
+                            <img src="img/iconos-redes/instagram.png" alt="instagram">@connecticus
+                        </a>
+                    </li>
+                    <li class="footer__foot-item">
+                        <a class="footer__foot-link" href="https://es-la.facebook.com/" target="_blank">
+                            <img src="img/iconos-redes/facebook.png" alt="facebook">Connecticus
+                        </a>
+                    </li>
+                    <li class="footer__foot-item">
+                        <a class="footer__foot-link" href="https://www.youtube.com/" target="_blank">
+                            <img src="img/iconos-redes/youtube.png" alt="youtube">Connecticus
+                        </a>
+                    </li>
+                    <li class="footer__foot-item">
+                        <a class="footer__foot-link" href="https://ar.linkedin.com/" target="_blank">
+                            <img src="img/iconos-redes/linkedin.png" alt="linkedin">Connecticus
+                        </a>
+                    </li>
+                    <li class="footer__foot-item">
+                        <a class="footer__foot-link" href="https://twitter.com/?lang=es" target="_blank">
+                            <img src="img/iconos-redes/twitter.png" alt="">@connecticus
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+                
+        <div class="footer__legales">
+            <ul class="footer__legales-list">
+                <li class="footer__legales-item">
+                    <a class="footer__legales-link" href="#">Condiciones de Uso</a></li>
+                <li class="footer__legales-item">
+                    <a class="footer__legales-link" href="#">Aviso de privacidad</a></li>
+                <li class="footer__legales-item">&copy; 2021 Connectidesign.com</li>
+            </ul>
+        </div>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="general-header">
+        
+        <div class="logo__container">
+            <img src="img/logo/logo-connecticus.png" alt="logo-connecticus">
+        </div>
+        
+        <nav class="nosotros__nav-bar">
+            <ul class="nav-bar__nav-list">
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="alta.html">Alta</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+            </ul>
+        </nav>
+    </header> 
+    
+    <div class="contacto__container">
+        
+        <div class="contacto-map__container">
+            <div class="contacto-map__link">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.2122055695268!2d-60.64530554934609!3d-32.94540638082788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab16355843ed%3A0x17018e51e5ea2a55!2sC%C3%B3rdoba%201450%2C%20S2000AWV%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1633583776162!5m2!1ses!2sar" 
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+        
+        <div class="form-contacto__container">
+        
+            <h1 class="form-header">Formulario de contacto</h1>
+
+            <form action="contacto.php" method="post" autocomplete="off">
+            
+                <fieldset class="form-contacto__fieldset">
+
+                    <legend class="form-contacto__legend"
+                        >Complete el siguiente formulario y nos comunicaremos a la brevedad...
+                    </legend> 
+                                
+                    <div class="form-contacto__row">
+                        <label for="nombre">Nombre:<sup>*</sup> </label>
+                        <input id="nombre" type="text" name="nombre" required autofocus>
+                    </div>
+                
+                    <div class="form-contacto__row">
+                        <label for="apellido">Apellido:<sup>*</sup></label>
+                        <input id="apellido" type="text" name="apellido" required>
+                    </div>
+
+                    <div class="form-contacto__row">
+                        <label for="telefono">Teléfono:</label>
+                        <input 
+                            id="telefono" 
+                            type="text" 
+                            name="telefono" 
+                            placeholder="Código de área y número"> 
+                    </div>
+                    
+                    <div class="form-contacto__row">        
+                        <label for="email">Dirección de correo electrónico:<sup>*</sup></label>
+                        <input id="email" 
+                            type="email" name="email" placeholder="Ej: mail@gmail.com" required
+                        >
+                    </div>
+                    <div class="form-contacto__row">
+                        <label for="nacionalidad">Quiero más información sobre:<sup>*</sup></label>
+                        <select id="nacionalidad" name="nacionalidad" required>
+                            <option value="">- Seleccionar -</option>
+                            <option value="1">Productos</option>
+                            <option value="2">Pagos</option>
+                            <option value="3">Envíos</option>
+                            <option value="4">Post-venta</option>
+                            <option value="5">Otras consultas</option>
+                        </select>    
+                    </div>
+                    <div class="form-contacto__row">
+                        <label for="comentarios">Comentarios:</label>
+                        <textarea name="comentarios" id="comentarios" cols="20" rows="2"></textarea>
+                    </div>
+
+                    <input class="form-contacto__button" type="submit" value="Enviar">
+                        
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="contacto__redes-container">
+            <h3 class="contacto__redes-header">Redes</h3>
+            <ul class="contacto__redes-list">
+                <li class="contacto__redes-item">
+                    <a class="footer__foot-link" href="https://www.instagram.com/?hl=es" target="_blank">
+                        <img src="img/iconos-redes/instagram.png" alt="instagram">@connecticus
+                    </a>
+                </li>
+                <li class="contacto__redes-item">
+                    <a class="footer__foot-link" href="https://es-la.facebook.com/" target="_blank">
+                        <img src="img/iconos-redes/facebook.png" alt="facebook">Connecticus
+                    </a>
+                </li>
+                <li class="contacto__redes-item">
+                    <a class="footer__foot-link" href="https://www.youtube.com/" target="_blank">
+                        <img src="img/iconos-redes/youtube.png" alt="youtube">Connecticus
+                    </a>
+                </li>
+                <li class="contacto__redes-item">
+                    <a class="footer__foot-link" href="https://ar.linkedin.com/" target="_blank">
+                        <img src="img/iconos-redes/linkedin.png" alt="linkedin">Connecticus
+                    </a>
+                </li>
+                <li class="contacto__redes-item">
+                    <a class="footer__foot-link" href="https://twitter.com/?lang=es" target="_blank">
+                        <img src="img/iconos-redes/twitter.png" alt="">@connecticus
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    
+    <section class="contacto__datos-connecticus-container">
+        <h3 class="contacto__datos-connecticus-header">Donde encontrarnos</h3>
+        <div class="contacto__datos-connecticus-boxes">
+            <a class="contacto__datos-connecticus-link" target="_blank" href="https://www.google.com.ar/maps/place/C%C3%B3rdoba+1450,+S2000AWV+Rosario,+Santa+Fe/@-32.9454064,-60.6453002,17z/data=!3m1!4b1!4m5!3m4!1s0x95b7ab16355843ed:0x17018e51e5ea2a55!8m2!3d-32.9454064!4d-60.6431115">
+                <div class="contacto__datos-connecticus-img">
+                    <img src="img/contacto/shop.png" alt="casa-central">
+                </div>
+                <div class="contacto__datos-connecticus-content">
+                    <p>Casa central:</p>
+                    <p>Córdoba 1450</p>
+                    <p>Rosario (2000) - Santa Fe - Argentina</p>
+                </div>                                          
+            </a>
+            <a class="contacto__datos-connecticus-link" href="tel:+543414116666">
+                <div class="contacto__datos-connecticus-img">
+                    <img src="img/contacto/phone.png" alt="telefono">
+                </div>
+                <div class="contacto__datos-connecticus-content">
+                    <p>Télefonos:</p>
+                    <p>TE: (0341) 411-6666</p>
+                    <p>Cel: +5493413040555</p>
+                </div>  
+            </a>
+            <a class="contacto__datos-connecticus-link" href="mailto:contacto@connecticus.com">
+                <div class="contacto__datos-connecticus-img">
+                    <img src="img/contacto/envelope.png" alt="mail">
+                </div>
+                <div class="contacto__datos-connecticus-content">
+                    <p>Mail:</p>
+                    <p>contacto@connecticus.com</p>
+                </div>  
+            </a>
+        </div>
+    </section>
+
+    <div class="contacto__whatsapp-container">
+        <a class="contacto__whatsapp-link" href="https://wa.me/+5493413040555">
+            <img src="img/iconos-redes/whatsapp.png" alt="whatsapp">
+        </a>
+    </div>
+
+    <footer>      
+        <div class="footer__back-to-main">
+            <a class="footer__back-to-main-link"  href="index.html">
+                Volver a página Inicio
+            </a>
+        </div>
+        <div class="footer__legales">
+            <ul class="footer__legales-list">
+                <li class="footer__legales-item">
+                    <a class="footer__legales-link" href="#">Condiciones de Uso</a>
+                </li>
+                <li class="footer__legales-item">
+                    <a class="footer__legales-link" href="#">Aviso de privacidad</a>
+                </li>
+                <li class="footer__legales-item">&copy; 2021 Connectidesign.com</li>
+            </ul>
+        </div>     
+    </footer>
+
+</body>
+</html>

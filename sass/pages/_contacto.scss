@@ -1,0 +1,209 @@
+.contacto__container {
+    display: flex;
+    justify-content: stretch;
+    height: 40%;
+}
+
+.form-contacto__container {
+    background-color: rgb(7, 7, 46);
+    color: whitesmoke;
+    text-align: right;
+    padding: 2em 1.8em;
+}
+
+.form-contacto__row {
+    padding: 0.5em 1.5em 0.5em 1em;
+}
+
+.form-contacto__row input,  
+.form-contacto__row select {
+    width: 20em;
+    margin-left: 1em;
+    height: 2em;
+}
+
+.form-contacto__row textarea {
+    width: 20em;
+    margin-left: 1em;
+    height: 3em;
+    max-width: 20em;
+    max-height: 3em;
+}
+
+.form-contacto__button {
+    background-color: white;
+    color: rgb(11, 7, 46);
+    margin: 0.5em 1.8em 1em 0.5em;
+    padding: 0.5em;
+    font-weight: bold;
+
+    &:hover,
+    &:focus {
+        -moz-transform: scale(1.03);
+        -webkit-transform: scale(1.03);
+        transform: scale(1.03);
+        -moz-transform-origin: bottom;
+        -webkit-transform-origin: bottom;
+        transform-origin: bottom;
+        box-shadow: 0px 7px 8px 4px rgba(0, 0, 0, .05), 0 3px 3px rgba(0, 0, 0, .01);
+    }    
+}
+
+.contacto__redes-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    list-style: none;
+}
+
+.contacto-map__container {
+    background-color: rgb(7, 7, 46);
+    height: 40em;
+    padding: 5em 2.8em;
+}
+
+.contacto-map__link {
+    width: 90%;
+    height: 30%;
+}
+
+.contacto__redes-container {
+    background-color: rgb(7, 7, 46);
+    color: whitesmoke;
+    padding: 12em 2em;
+}
+
+.contacto__redes-item {
+    color: whitesmoke;
+    width: 10em;
+    
+    &:hover {
+        font-weight: bold;
+    }
+}
+
+.contacto__redes-item a {
+    color: whitesmoke;
+}
+
+.contacto__redes-item img {
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 0.6em;
+}
+
+.form-contacto__legend {
+    font-size: 1.2em;
+}
+
+.contacto__datos-connecticus-container {
+    background-color: yellow;
+    margin: 0.5em 0;
+    text-align: center;
+    padding: 1.2em; 
+
+}
+
+.contacto__datos-connecticus-header {
+    justify-content: center;
+}
+
+.contacto__datos-connecticus-boxes { 
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1em;
+}
+
+.contacto__datos-connecticus-link {
+    background-color: whitesmoke;
+    border-radius: 2em;
+    width: 25em;
+    height: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    color: #383838;
+    font-weight: bold;
+    padding: 6em 1em;
+
+    &:hover,
+    &:focus {
+        -moz-transform: scale(1.03);
+        -webkit-transform: scale(1.03);
+        transform: scale(1.03);
+        -moz-transform-origin: bottom;
+        -webkit-transform-origin: bottom;
+        transform-origin: bottom;
+        box-shadow: 0px 7px 8px 4px rgba(0, 0, 0, .05), 0 3px 3px rgba(0, 0, 0, .01);
+    }    
+}
+
+.contacto__datos-connecticus-link img {
+    width: 4em;
+    height: 4em;
+}
+
+.contacto__whatsapp-link img {
+    width: 4em;
+    height: 4em;
+    z-index: 1;
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    
+    &:hover,
+    &:focus {
+        -moz-transform: scale(1.03);
+        -webkit-transform: scale(1.03);
+        transform: scale(1.03);
+        -moz-transform-origin: bottom;
+        -webkit-transform-origin: bottom;
+        transform-origin: bottom;
+        box-shadow: 0px 7px 8px 4px rgba(0, 0, 0, .05), 0 3px 3px rgba(0, 0, 0, .01);
+    }    
+}
+
+@media (max-width: 768px) {
+
+
+    .form-contacto__container {
+        width: 100%;
+        padding: 1em;
+    }
+
+    .form-contacto__row {
+        display: flex;
+        flex-direction: column;  
+        align-items: flex-end; 
+    }
+
+    .contacto-map__container {
+        display: none;
+    }
+
+    .contacto__datos-connecticus-boxes {
+        flex-wrap: wrap;
+    }
+
+    .contacto__redes-container {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 1200px) {
+
+    .contacto-map__container {
+        display: none;
+    }
+
+    .contacto__redes-container {
+        width: 20%;
+    }
+
+    .form-contacto__container {
+        width: 80%;
+    }
+
+}

@@ -1,0 +1,71 @@
+.section__historia {
+    background-color: rgb(7, 7, 46);
+    padding: 2em 3em 2em;
+    color: white;
+}
+
+.section__title1-historia {
+    margin-bottom: 0.5em;
+}
+
+.section__img-nosotros img {
+    width: 100%;
+    height: 15em;
+}
+
+.section__contenido-historia {
+    margin-bottom: 0.5em;
+    text-align: justify;
+}
+
+.section__info-container {
+    background-color: yellow;
+    margin: 0.5em 0;
+    text-align: center;
+    padding: 1.2em; 
+}
+
+.section__info-header {
+    justify-content: center;
+}
+
+.section__info-boxes { 
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1em;
+}
+
+.section__info-content {
+    background-color: whitesmoke;
+    border-radius: 2em;
+    width: 25em;
+    height: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    color: #383838;
+    font-weight: bold;
+    padding: 6em 1em;
+
+    
+    &:hover,
+    &:focus {
+        background-color: rgb(7, 7, 46);
+        color: whitesmoke;
+    }    
+}
+
+.section__info-content h4 {
+    text-decoration: underline;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .section__info-boxes {
+        flex-wrap: wrap;
+    }
+
+}

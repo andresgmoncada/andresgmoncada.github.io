@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alta</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="general-header">
+        
+        <div class="logo__container">
+            <img src="img/logo/logo-connecticus.png" alt="logo-connecticus">
+        </div>
+        
+        <nav class="nosotros__nav-bar">
+            <ul class="nav-bar__nav-list">
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="alta.html">Alta</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+            </ul>
+        </nav>
+    </header> 
+
+    <main class="alta__main">
+        <form action="alta.php" method="post" autocomplete="off">
+                
+            <fieldset class="form-alta__fieldset">
+
+                <legend class="form-alta__legend"
+                    >Alta productos
+                </legend> 
+                            
+                <div class="form-alta__row">
+                    <label for="nombre">Nombre:<sup>*</sup> </label>
+                    <input id="nombre" type="text" name="nombre" required autofocus>
+                </div>
+            
+                <div class="form-alta__row">
+                    <label for="precio">Precio:<sup>*</sup></label>
+                    <input id="precio" type="number" name="precio" required step="0.01">
+                </div>
+
+                <div class="form-alta__row">
+                    <label for="stock">Stock:<sup>*</sup></label>
+                    <input id="stock" type="number" name="stock" required step="1"> 
+                </div>
+                
+                <div class="form-alta__row">
+                    <label for="marca">Marca:<sup>*</sup></label>
+                    <select id="marca" name="marca" required>
+                        
+                        <option value="">- Seleccionar -</option>
+                        <optgroup label="Notebooks">
+                            <option value="5">HP</option>
+                            <option value="7">Lenovo</option>
+                        </optgroup>
+                        <optgroup label="Celulares">
+                            <option value="1">Apple</option>
+                            <option value="9">Samsung</option>
+                        </optgroup>
+                        <optgroup label="Cámaras">
+                            <option value="2">Canon</option>
+                        </optgroup>
+                        <optgroup label="Sonido">
+                            <option value="6">JBL</option>
+                            <option value="10">Sony</option>
+                        </optgroup>
+                        <optgroup label="Drones">
+                            <option value="3">DJI</option>
+                        </optgroup>
+                        <optgroup label="Televisores">
+                            <option value="8">LG</option>
+                        </optgroup>
+                        <optgroup label="Otros">
+                            <option value="4">Google</option>
+                        </optgroup>
+                    </select>    
+                </div>
+
+                
+                <div class="form-alta__row">
+                    <label for="categoria">Categoría:<sup>*</sup></label>
+                        <select id="categoria" name="categoria" required>
+                            <option value="">- Seleccionar -</option>
+                            <option value="1">Telefonía</option>
+                            <option value="2">Televisores</option>
+                            <option value="3">Sonido</option>
+                            <option value="4">Cámaras</option>
+                            <option value="5">Drones</option>
+                            <option value="6">Otros</option>
+                        </select>    
+                </div>
+
+                <div class="form-alta__row">
+                    <label for="foto">Cargar fotos:</label>
+                    <input id="foto" type="file" name="foto">
+                </div>
+                            
+                <div class="form-alta__row">
+                    <label for="detalles">Detalles:</label>
+                    <textarea name="detalles" id="detalles" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="form-alta__row-checkbox">
+                    <label for="envio">Envío sin cargo:</label>
+                    <input id="envio" type="checkbox" name="envio">
+                </div>
+
+                <input class="form-alta__button-reset" type="reset" value="Restablecer">
+                
+                <input class="form-alta__button-submit" type="submit" value="Enviar">
+                    
+            </fieldset>
+        </form>
+    </main>    
+
+    
+    <footer>      
+        <div class="footer__back-to-main">
+            <a class="footer__back-to-main-link"  href="index.html">
+                Volver a página Inicio
+            </a>
+        </div>
+        <div class="footer__legales">
+            <ul class="footer__legales-list">
+                <li class="footer__legales-item">
+                    <a class="footer__legales-link" href="#">Condiciones de Uso</a>
+                </li>
+                <li class="footer__legales-item">
+                    <a class="footer__legales-link" href="#">Aviso de privacidad</a>
+                </li>
+                <li class="footer__legales-item">&copy; 2021 Connectidesign.com</li>
+            </ul>
+        </div>     
+    </footer>
+
+
+
+
+
+
+</body>
+</html>
